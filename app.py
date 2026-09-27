@@ -195,11 +195,9 @@ with tab2:
                 v_violations = [c for c in d_classes if c in VIOLATION_CLASSES]
                 v_compliant  = [c for c in d_classes if c not in VIOLATION_CLASSES]
 
-                # Resize frame for smooth cloud WebSocket streaming and display
-                display_frame = cv2.resize(annotated_rgb, (640, 360))
-                frame_placeholder.image(display_frame, width=640)
-                time.sleep(0.02)  # Yield to WebSocket to ensure fluid frame transmission
-
+                # Update live video stream
+                frame_placeholder.image(annotated_rgb, use_container_width=True)
+                
                 # Update live stats
                 fps_metric.metric("Inference Throughput", f"{fps:.1f} FPS")
 
