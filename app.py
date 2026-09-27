@@ -227,10 +227,10 @@ with tab2:
 with tab3:
     st.header("Model Specifications & Architecture")
     st.markdown("""
-    - **Architecture:** YOLO11n (Anchor-Free Convolutional Neural Network)
+    - **Architecture:** YOLO11n
     - **Training Dataset:** Roboflow Combined PPE Benchmark
-    - **Training Volume:** 44,000 Annotations (22,077 Test Instances Evaluated)
-    - **Optimization Epochs:** 25 Epochs with Decoupled Detection Head
+    - **Training Volume:** 44,000 Annotations
+    - **Optimization Epochs:** 25 Epochs
     """)
 
     st.markdown("<br>", unsafe_allow_html=True)
