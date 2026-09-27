@@ -127,7 +127,6 @@ with tab1:
 # ─────────────────────────────────────────────────────────────────────────────
 with tab2:
     st.subheader("Video Stream & Surveillance Analytics")
-    st.markdown("Run real-time PPE inference across uploaded video feeds.")
 
     # Video parameters
     v_c1, v_c2 = st.columns(2)
